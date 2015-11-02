@@ -27,9 +27,9 @@ bash tools/tempauth_functional_tests.sh || EXIT_STATUS=$?
 bash tools/gswauth_functional_tests.sh || EXIT_STATUS=$?
 
 # Run object expirer functional tests if gsexpiring volume is found.
-if mount | grep "gsexpiring on /mnt/gluster-object/gsexpiring type fuse.glusterfs"; then
-	echo "Running object expirer functional tests"
-	bash tools/object_expirer_functional.sh || EXIT_STATUS=$?
-fi
+#if mount | grep "gsexpiring on /mnt/gluster-object/gsexpiring type fuse.glusterfs"; then
+#	echo "Running object expirer functional tests"
+#	bash tools/object_expirer_functional.sh || EXIT_STATUS=$?
+#fi
 
 exit $EXIT_STATUS
